@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/studentName_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="名字"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/studentId_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生Id:"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:text="成绩:"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/score_et"
+            android:layout_width="0sp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

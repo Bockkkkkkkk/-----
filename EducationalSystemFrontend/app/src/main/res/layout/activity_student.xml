@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".StudentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的课程"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:text="点击课程以查看教师信息"
+            android:textColor="#c75450"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_course"
+        android:layout_width="match_parent"
+        android:layout_height="590sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/chooseCourse_btn"
+            android:layout_width="200sp"
+            android:layout_height="70sp"
+            android:text="选课"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/withdrawCourse_btn"
+            android:layout_width="200sp"
+            android:layout_height="70sp"
+            android:text="退课"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>
