@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.educationalsystembackend.mapper.teacherMapper">
+
+
+    <insert id="insertCourse" useGeneratedKeys="true" keyProperty="id">
+        insert into course (name, introduction, beginTime, endTime, state)
+        VALUES (#{name},#{introduction},#{beginTime},#{endTime},#{state})
+    </insert>
+</mapper>
